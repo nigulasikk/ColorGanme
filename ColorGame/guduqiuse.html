@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .no-select{
+            moz-user-select: -moz-none;
+            -moz-user-select: none;
+            -o-user-select:none;
+            -khtml-user-select:none; /* you could also put this in a class */
+            -webkit-user-select:none;/* and add the CSS class here instead */
+            -ms-user-select:none;
+            user-select:none;/**禁止选中文字*/
+        }
+    </style>
+</head>
+<body style="background: #323232;font-family: 'Lato', Times, 'Times New Roman', serif;font-size: 16px;color: #eee;overflow-x: hidden;">
+<h1 class="no-select" style="text-align: center;">看你有多色</h1>
+
+
+
+   <div style="width:600px;margin:20px auto;">
+
+       <canvas id="canvas" width="590" height="590"></canvas>
+   </div>
+<div class="no-select" style=" width:300px;position: relative;margin-top:-500px;">
+    <span style="font-size: 17px;">游戏规则：找出所有色块中的不同一个</span><br>
+
+</div>
+<div class="no-select" style="position: relative;margin-left:1000px;">
+
+    <span style="font-size: 40px;">倒计时：</span>
+    <span id="timeCount" style="font-size: 50px;">10</span><br>
+    <span style="font-size: 40px;">得分：</span>
+    <span id="score" style="font-size: 50px;">0</span>
+
+</div>
+
+   <script src="jquery-1.7.2.min.js"></script>
+   <script src="guduqiuse.js"></script>
+</body>
+</html>
